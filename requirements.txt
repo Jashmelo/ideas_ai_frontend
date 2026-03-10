@@ -1,0 +1,10 @@
+ollama
+pydantic
+httpx
+anyio
+httpcore
+h11
+Flask
+Flask-Login
+Flask-SQLAlchemy
+SQLAlchemy

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea Research Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>Idea Research Assistant</h1>
+            <button id="logout-btn">Logout</button>
+        </header>
+        <div class="sidebar">
+            <button id="new-chat-btn">New Chat</button>
+            <ul id="chat-list"></ul>
+        </div>
+        <div class="chat-container">
+            <div id="chat-messages"></div>
+            <div class="input-container">
+                <input type="file" id="file-input" accept=".txt,.pdf,.doc,.docx">
+                <input type="text" id="message-input" placeholder="Describe your idea...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
